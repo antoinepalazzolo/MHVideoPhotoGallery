@@ -9,6 +9,7 @@
 #import "MHTransitionDismissMHGallery.h"
 #import "MHOverviewController.h"
 #import "MHGallerySharedManagerPrivate.h"
+@import AVFoundation;
 
 @interface MHTransitionDismissMHGallery()
 

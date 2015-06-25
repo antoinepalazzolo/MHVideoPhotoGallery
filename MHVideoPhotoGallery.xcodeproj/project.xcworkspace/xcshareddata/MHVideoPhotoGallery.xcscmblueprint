@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "56704562588E1C087C3CFD8B55D9747BA7473651",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "56704562588E1C087C3CFD8B55D9747BA7473651" : 0,
+    "C448AE20B620839FC6EB57C0589EAA00E46FE7F6" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "98F0DC4E-C601-4CDC-9D72-BCE913BAF93A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "56704562588E1C087C3CFD8B55D9747BA7473651" : "MHVideoPhotoGallery\/",
+    "C448AE20B620839FC6EB57C0589EAA00E46FE7F6" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MHVideoPhotoGallery",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 203,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MHVideoPhotoGallery.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/antoinepalazzolo\/MHVideoPhotoGallery.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "56704562588E1C087C3CFD8B55D9747BA7473651"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/ci.kreactive.eu:29418\/snapschool\/ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C448AE20B620839FC6EB57C0589EAA00E46FE7F6"
+    }
+  ]
+}

@@ -1,25 +1,30 @@
+@import Foundation;
 
-#import <CoreMedia/CoreMedia.h>
-#import <AVFoundation/AVFoundation.h>
-#import <ImageIO/ImageIO.h>
-#import <MediaPlayer/MediaPlayer.h>
-#import <QuartzCore/QuartzCore.h>
-#import <AssetsLibrary/AssetsLibrary.h>
+//! Project version number for MHGallery.
+FOUNDATION_EXPORT double MHGalleryVersionNumber;
 
-#import "UIImageView+MHGallery.h"
-#import "MHTransitionDismissMHGallery.h"
-#import "MHTransitionPresentMHGallery.h"
-#import "MHPresenterImageView.h"
-#import "MHCustomization.h"
-#import "MHGalleryItem.h"
-#import "MHGallerySharedManager.h"
-#import "MHGalleryController.h"
-#import "MHOverviewController.h"
-#import "MHTransitionShowOverView.h"
-#import "MHGalleryImageViewerViewController.h"
+//! Project version string for MHGallery.
+FOUNDATION_EXPORT const unsigned char MHGalleryVersionString[];
 
-#import "SDWebImageDecoder.h"
-#import "SDImageCache.h"
+// In this header, you should import all the public headers of your framework using statements like #import <MHGallery/PublicHeader.h>
+
+#import <MHGallery/UIImageView+MHGallery.h>
+#import <MHGallery/MHTransitionDismissMHGallery.h>
+#import <MHGallery/MHTransitionPresentMHGallery.h>
+#import <MHGallery/MHPresenterImageView.h>
+#import <MHGallery/MHCustomization.h>
+#import <MHGallery/MHGalleryItem.h>
+#import <MHGallery/MHGallerySharedManager.h>
+#import <MHGallery/MHGalleryController.h>
+#import <MHGallery/MHOverviewController.h>
+#import <MHGallery/MHTransitionShowOverView.h>
+#import <MHGallery/MHGalleryImageViewerViewController.h>
+#import <MHGallery/SDWebImageDecoder.h>
+#import <MHGallery/SDImageCache.h>
+
+
+
+
 
 #define MHISIPAD ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
 #define kMHGalleryBundleName @"MHGallery.bundle"

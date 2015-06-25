@@ -8,6 +8,7 @@
 
 #import "MHTransitionShowOverView.h"
 #import "MHGallerySharedManagerPrivate.h"
+@import AVFoundation;
 
 @interface MHTransitionShowOverView()
 @property (nonatomic,strong) UIToolbar *toolbar;

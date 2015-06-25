@@ -5,7 +5,7 @@
 //  Created by Mario Hahn on 04.03.14.
 //  Copyright (c) 2014 Mario Hahn. All rights reserved.
 //
-
+@import UIKit;
 typedef NS_ENUM(NSUInteger, MHGalleryViewMode) {
     MHGalleryViewModeImageViewerNavigationBarHidden =0,
     MHGalleryViewModeImageViewerNavigationBarShown =1,

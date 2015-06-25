@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@import MediaPlayer;
 #import "MHGallery.h"
 #import "MHUIImageViewContentViewAnimation.h"
 

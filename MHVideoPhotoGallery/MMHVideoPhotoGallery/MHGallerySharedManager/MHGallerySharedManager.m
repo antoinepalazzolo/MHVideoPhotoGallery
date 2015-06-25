@@ -8,6 +8,8 @@
 
 #import "MHGallerySharedManager.h"
 #import "MHGallerySharedManagerPrivate.h"
+@import AssetsLibrary;
+@import AVFoundation;
 
 @implementation MHGallerySharedManager
 
