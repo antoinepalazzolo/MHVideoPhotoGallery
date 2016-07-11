@@ -13,7 +13,11 @@
 
 @interface MHTransitionDismissMHGallery : UIPercentDrivenInteractiveTransition<UIViewControllerAnimatedTransitioning>
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 @property (nonatomic,strong)    MPMoviePlayerController *moviePlayer;
+#pragma clang diagnostic pop
+
 @property (nonatomic,strong)    UIImageView *transitionImageView;
 @property (nonatomic,assign)    CGPoint changedPoint;
 @property (nonatomic,assign)    CGFloat orientationTransformBeforeDismiss;

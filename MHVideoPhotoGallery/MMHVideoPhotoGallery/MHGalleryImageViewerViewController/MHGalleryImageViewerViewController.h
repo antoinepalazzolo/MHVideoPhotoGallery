@@ -53,7 +53,10 @@
 @property (nonatomic,strong)        UIButton *playButton;
 @property (nonatomic,strong)        UIActivityIndicatorView *act;
 @property (nonatomic,strong)        UIImageView *imageView;
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 @property (nonatomic,strong)        MPMoviePlayerController *moviePlayer;
+#pragma clang diagnostic pop
 
 @property (nonatomic)               NSInteger pageIndex;
 @property (nonatomic)               NSInteger currentTimeMovie;
