@@ -319,7 +319,7 @@ BOOL ImageDataHasPNGPreffix(NSData *data) {
     [self removeImageForKey:key withCompletion:nil];
 }
 
-- (void)removeImageForKey:(NSString *)key withCompletion:(void (^)())completion {
+- (void)removeImageForKey:(NSString *)key withCompletion:(void (^)(void))completion {
     [self removeImageForKey:key fromDisk:YES withCompletion:completion];
 }
 
@@ -327,7 +327,7 @@ BOOL ImageDataHasPNGPreffix(NSData *data) {
     [self removeImageForKey:key fromDisk:fromDisk withCompletion:nil];
 }
 
-- (void)removeImageForKey:(NSString *)key fromDisk:(BOOL)fromDisk withCompletion:(void (^)())completion {
+- (void)removeImageForKey:(NSString *)key fromDisk:(BOOL)fromDisk withCompletion:(void (^)(void))completion {
     
     if (key == nil) {
         return;
@@ -367,7 +367,7 @@ BOOL ImageDataHasPNGPreffix(NSData *data) {
     [self clearDiskOnCompletion:nil];
 }
 
-- (void)clearDiskOnCompletion:(void (^)())completion
+- (void)clearDiskOnCompletion:(void (^)(void))completion
 {
     dispatch_async(self.ioQueue, ^{
         [_fileManager removeItemAtPath:self.diskCachePath error:nil];
@@ -388,7 +388,7 @@ BOOL ImageDataHasPNGPreffix(NSData *data) {
     [self cleanDiskWithCompletionBlock:nil];
 }
 
-- (void)cleanDiskWithCompletionBlock:(void (^)())completionBlock {
+- (void)cleanDiskWithCompletionBlock:(void (^)(void))completionBlock {
     dispatch_async(self.ioQueue, ^{
         NSURL *diskCacheURL = [NSURL fileURLWithPath:self.diskCachePath isDirectory:YES];
         NSArray *resourceKeys = @[NSURLIsDirectoryKey, NSURLContentModificationDateKey, NSURLTotalFileAllocatedSizeKey];

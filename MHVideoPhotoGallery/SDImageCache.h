@@ -136,7 +136,7 @@ typedef void(^SDWebImageCheckCacheCompletionBlock)(BOOL isInCache);
  * @param key             The unique image cache key
  * @param completionBlock An block that should be executed after the image has been removed (optional)
  */
-- (void)removeImageForKey:(NSString *)key withCompletion:(void (^)())completion;
+- (void)removeImageForKey:(NSString *)key withCompletion:(void (^)(void))completion;
 
 /**
  * Remove the image from memory and optionally disk cache synchronously
@@ -153,7 +153,7 @@ typedef void(^SDWebImageCheckCacheCompletionBlock)(BOOL isInCache);
  * @param fromDisk        Also remove cache entry from disk if YES
  * @param completionBlock An block that should be executed after the image has been removed (optional)
  */
-- (void)removeImageForKey:(NSString *)key fromDisk:(BOOL)fromDisk withCompletion:(void (^)())completion;
+- (void)removeImageForKey:(NSString *)key fromDisk:(BOOL)fromDisk withCompletion:(void (^)(void))completion;
 
 /**
  * Clear all memory cached images
@@ -164,7 +164,7 @@ typedef void(^SDWebImageCheckCacheCompletionBlock)(BOOL isInCache);
  * Clear all disk cached images. Non-blocking method - returns immediately.
  * @param completionBlock An block that should be executed after cache expiration completes (optional)
  */
-- (void)clearDiskOnCompletion:(void (^)())completion;
+- (void)clearDiskOnCompletion:(void (^)(void))completion;
 
 /**
  * Clear all disk cached images
@@ -176,7 +176,7 @@ typedef void(^SDWebImageCheckCacheCompletionBlock)(BOOL isInCache);
  * Remove all expired cached image from disk. Non-blocking method - returns immediately.
  * @param completionBlock An block that should be executed after cache expiration completes (optional)
  */
-- (void)cleanDiskWithCompletionBlock:(void (^)())completionBlock;
+- (void)cleanDiskWithCompletionBlock:(void (^)(void))completionBlock;
 
 /**
  * Remove all expired cached image from disk
